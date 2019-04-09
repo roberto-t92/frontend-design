@@ -1,0 +1,167 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta name="author" content="Roberto Torres">
+
+  <title>Dashboard</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/roberto-t92/cv/master/ico.png"/>
+  <meta charset="utf-8">
+  <meta name="keywords" content="dashboard sample">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link href="home.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="grid-container">
+    <div class="menu-icon">
+       <i class="fas fa-bars"></i>
+    </div>
+    <header class="header">
+        <div class="search">
+          <input class="search-input" placeholder="Buscar..">
+        </div>
+        <div class="msg"><i class="far fa-envelope"></i></div>
+        <div class="login"><i class="fas fa-power-off"></i></div>
+    </header>
+    <aside class="sidenav">
+    <div class="sidenav-close-icon">
+       <i class="fas fa-times"></i>
+    </div>
+      <div class="user-img">
+         <i class="far fa-smile-wink"></i>
+      </div>
+      <div class="user-label">
+        <label>Roberto Torres</label>
+        <label>Admin</label>
+      </div>
+      <!--<ul class="sidenav-ul">
+        <li class="sidenav-li">Menu</li>
+        <li class="sidenav-li">Menu</li>
+        <li class="sidenav-li">Menu</li>
+        <li class="sidenav-li">Menu</li>
+      </ul>-->
+      <ul class="sidenav-drop">
+        <li class="drop-header">GRAFICAS</li>
+        <li>
+          <div id="drop-subtitle-1" class="drop-subtitle">
+            <span class="drop-li-icon"><i class="fas fa-file-alt"></i></span>
+            <span class="drop-li-title">Reportes</span>
+            <span id="drop-li-arrow-1" class="drop-li-arrow"><i class="fas fa-chevron-right"></i></span>
+          </div>
+          <ul id="drop-sublist-hidden-1" class="drop-sublist-hidden">
+            <li class="drop-sublist-item">Data</li>
+            <li class="drop-sublist-item">Data</li>
+            <li class="drop-sublist-item">Data</li>
+          </ul>
+          <div id="drop-subtitle-2" class="drop-subtitle">
+            <span class="drop-li-icon"><i class="fas fa-user-tie"></i></span>
+            <span class="drop-li-title">RH KPI</span>
+            <span id="drop-li-arrow-2" class="drop-li-arrow"><i class="fas fa-chevron-right"></i></span>
+          </div>
+           <ul id="drop-sublist-hidden-2" class="drop-sublist-hidden">
+             <li class="drop-sublist-item">Data</li>
+             <li class="drop-sublist-item">Data</li>
+             <li class="drop-sublist-item">Data</li>
+           </ul>
+          <div id="drop-subtitle-3" class="drop-subtitle">
+            <span class="drop-li-icon"><i class="fas fa-money-bill-wave-alt"></i></span>
+            <span class="drop-li-title">Ventas</span>
+            <span id="drop-li-arrow-3" class="drop-li-arrow"><i class="fas fa-chevron-right"></i></span>
+          </div>
+           <ul id="drop-sublist-hidden-3" class="drop-sublist-hidden">
+             <li class="drop-sublist-item">Data</li>
+             <li class="drop-sublist-item">Data</li>
+             <li class="drop-sublist-item">Data</li>
+           </ul>
+        </li>
+        <li class="drop-header">TABLAS</li>
+        <li>
+          <div id="drop-subtitle-4" class="drop-subtitle">
+             <span class="drop-li-icon"><i class="fas fa-wrench"></i></span>
+             <span class="drop-li-title">Tickets Soporte</span>
+             <span id="drop-li-arrow-4" class="drop-li-arrow"><i class="fas fa-chevron-right"></i></span>
+          </div>
+          <ul id="drop-sublist-hidden-4" class="drop-sublist-hidden">
+            <li class="drop-sublist-item">Data</li>
+            <li class="drop-sublist-item">Data</li>
+            <li class="drop-sublist-item">Data</li>
+          </ul>
+          <div id="drop-subtitle-5" class="drop-subtitle">
+            <span class="drop-li-icon"><i class="fas fa-th-list"></i></span>
+            <span class="drop-li-title">Bitacora</span>
+            <span id="drop-li-arrow-5" class="drop-li-arrow"><i class="fas fa-chevron-right"></i></span>
+          </div>
+           <ul id="drop-sublist-hidden-5" class="drop-sublist-hidden">
+             <li class="drop-sublist-item">Data</li>
+             <li class="drop-sublist-item">Data</li>
+             <li class="drop-sublist-item">Data</li>
+           </ul>
+          <div id="drop-subtitle-6" class="drop-subtitle">
+            <span class="drop-li-icon"><i class="fas fa-users"></i></span>
+            <span class="drop-li-title">Clientes</span>
+            <span id="drop-li-arrow-6" class="drop-li-arrow"><i class="fas fa-chevron-right"></i></span>
+          </div>
+           <ul id="drop-sublist-hidden-6" class="drop-sublist-hidden">
+             <li class="drop-sublist-item">Data</li>
+             <li class="drop-sublist-item">Data</li>
+             <li class="drop-sublist-item">Data</li>
+           </ul>
+        </li>
+      </ul>
+    </aside>
+    <main class="main">
+       <div class="main-header">
+          <label>Bienvenido!</label>
+          <div class="main-header-subrow">
+              <div class="main-header-proyectos">
+                  <label>Proyectos</label>
+                  <label>4</label>
+               </div>
+               <div class="main-header-facturas">
+                  <label>Facturas</label>
+                  <label>120</label>
+               </div>
+               <div class="main-header-cal">
+                  <label>Agenda <i class="far fa-calendar-alt"></i></label>
+                  <label id="fecha"></label>
+               </div>
+          </div>
+       </div>
+       <div class="main-upper">
+            <div class="upper-card">
+                <label>Total Acreedores: <span class="upper-card-plus">$340,300.00 </span><i class="fas fa-sort-up upper-card-plus"></i></label>
+            </div>
+            <div class="upper-card">
+                <label>Total Proveedores: <span class="upper-card-menos">$834,500.00 </span><i class="fas fa-sort-down upper-card-menos"></i></label>
+            </div>
+            <div class="upper-card">
+                <label>Balance Trimestral: <span class="upper-card-neutral">$1,302,756.00</span></label>
+            </div>
+       </div>
+       <div class="main-panels">
+          <div class="panels-content">
+             <canvas id="chart1" width="400" height="300"></canvas>
+          </div>
+          <div class="panels-content">
+             <canvas id="chart2" width="400" height="200"></canvas>
+          </div>
+          <div class="panels-content">
+             <label>Sample 3</label>
+          </div>
+          <div class="panels-content">
+            <label>Sample 4</label>
+          </div>
+       </div>
+    </main>
+</div>
+
+<script src="home.js"></script>
+<script src="charts.js"></script>
+</body>
+</html>
