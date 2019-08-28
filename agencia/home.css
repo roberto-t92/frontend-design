@@ -35,19 +35,19 @@ body {
 }
 
 #img-1 {
-    background-image: url("landscape-1.jpg");
+    background-image: url("https://res.cloudinary.com/dbasmnvxk/image/upload/v1566944376/design-samples/agencia/landscape-1_vpplue.jpg");
 }
 
 #img-2 {
-    background-image: url("landscape-2.jpg");
+    background-image: url("https://res.cloudinary.com/dbasmnvxk/image/upload/v1566944376/design-samples/agencia/landscape-2_q1yu7f.jpg");
 }
 
 #img-3 {
-    background-image: url("landscape-3.jpg");
+    background-image: url("https://res.cloudinary.com/dbasmnvxk/image/upload/v1566944376/design-samples/agencia/landscape-3_xus9xs.jpg");
 }
 
 #img-4 {
-    background-image: url("landscape-4.jpg");
+    background-image: url("https://res.cloudinary.com/dbasmnvxk/image/upload/v1566944376/design-samples/agencia/landscape-4_i4nt9b.jpg");
 }
 
 .card-body {
